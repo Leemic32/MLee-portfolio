@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    color: #1f8d99;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+header {
+    padding: 30px 30px;
+    background-color: #1f8d99;
+  }
+
+  header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: pink;
+    margin: 0;
+    display:inline-flex;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: pink;
+    float: left;
+  }
+
+  header nav {
+    float: right;
+    margin: 0px 0;
+  }
+
+  header nav ul li {
+    display: inline;
+  }
+
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+  }
+
+  section {
+    padding: 60px;
+  }
+
+.banner {
+    background-image: url("https://i.etsystatic.com/20694622/r/il/002784/2211154326/il_794xN.2211154326_p47t.jpg");
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+ 
+
+  .main header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background: rgb(19, 18, 18);
+      color: black;
+      margin-bottom: 25px;
+      height: 250px;
+  }
+
+  .container {
+      display: flex;
+      height: 500px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: auto;
+  }
+.big-item {
+    flex: 0 0 81%;
+}
+
+.small-item {
+    flex: 0 0 40%;
+}
+
+.content-title {
+    border: teal 5px solid;
+    color: black;
+    background-color: white;
+    position: absolute;
+    align-content: left;
+    width: 300px;
+    height: 100px;
+    bottom: -100px;
+    left: 180px;
+}
+  .sub-container {
+      display:block;
+      margin: 5px;
+      padding: 5px;
+      background: black;
+      color: peachpuff;
+      width: 25%;
+      border: pink 5px solid;
+      text-align: left;
+  }
+
+  .sub-container:hover{
+      border-color: teal;
+  }
+
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
